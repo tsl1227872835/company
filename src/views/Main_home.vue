@@ -21,9 +21,8 @@
 
 <style lang="less" scoped>
 .mainHome{
-    margin-top: 30px;
     .mainHomeTitle{
-        padding-top: 20px;
+        padding: 10px 0;
         font-size: 22px;
         font-weight: bold;
         text-indent: 2em;

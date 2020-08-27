@@ -65,15 +65,9 @@
 </script>
 
 <style lang="less" scoped>
-.amap-page-container{
-background-color: rgba(235, 242, 243, 0.952);
-  margin-top: 80px;
-    
+.amap-page-container{   
     .amap-demo {
-    height: 500px;
-      width: 1000px;
-    margin:0 auto;
-    
+    height: 500px;  
   }
 }
 </style>
