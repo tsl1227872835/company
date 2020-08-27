@@ -43,6 +43,7 @@
               zoomToAccuracy:true,//定位成功后调整地图视野范围使定位位置及精度范围视野内可见，默认：f
               extensions:'all',
               pName: 'Geolocation',
+              
               events: {
                 init(o) {
                   // o 是高德地图定位插件实例
