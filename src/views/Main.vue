@@ -10,7 +10,7 @@
     <el-menu-item index="8-2">选项2</el-menu-item>
     <el-menu-item index="8-3">选项3</el-menu-item>
   </el-submenu>
-  <el-menu-item index="/main">首页</el-menu-item>
+  <el-menu-item index="/">首页</el-menu-item>
   <el-menu-item index="/main/top_product">产品</el-menu-item>
   <el-menu-item index="3">客户案例</el-menu-item>
   <el-submenu index="/main/co">
@@ -34,9 +34,10 @@
 </el-header>
  <el-main><router-view/></el-main>
  <el-footer> 
-<div class="footerLeft">
-<p>地&emsp;址:&emsp;成都市天府新区华府大道蓝润置地广场2号楼</p>
-<p>电&emsp;话:&emsp;邮箱:&emsp;ganwukeji@163.com</p>
+
+<div class="footerLeft" v-for="item in foot" :key="item.name">
+<p>地&emsp;址:&emsp;{{item.name}}</p>
+<p>电&emsp;话:&emsp;邮箱:&emsp;{{item.email}}</p>
 <p>
   <router-link to="#">蜀ICP备</router-link>
   <router-link to="#">蜀公网安备</router-link>
@@ -61,12 +62,13 @@ export default {
     return{
       activeIndex: '1',
         activeIndex2: '1',
-
+foot: [{ name: '成都市天府新区华府大道蓝润置地广场2号楼', email: 'ganwukeji@163.com', icp: '',internet:''}]
+        
     };
   },
 methods:{
   handleSelect(key, keyPath) {
-    
+
         console.log(key, keyPath);
 
       }
